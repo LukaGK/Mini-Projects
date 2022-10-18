@@ -336,6 +336,32 @@ the month input has a calendar mini pop-up that stores data as in the time forma
         <label for="volume">Audio Volume</label>
     </p>
 
+ <!-- These are the form validations - requring the user to satisfy input parameters only using HTML Code-->
+
+    <h2>Validations test</h2>
+
+    <form action="/randomplace22">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+
+        <!-- Above we see the regular "required" attribute which will disable the user from submitting the form unless the input has some value in it-->
+
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <!-- Above we see the minlength/maxlength parameter which can be used for both type="text" and type="password" inputs-->
+
+        <p>
+            <label for="email">Enter your e-mail</label>
+            <input type="email" required id="email" name="email">
+        </p>
+
+        <!--In the type="email" input above, regarldess of the "required" attribute the e-mail attribute has a built-in requirement for the value to have "@" symbol in it-->
+
+    </form>
+
 </body>
 
 </html>
